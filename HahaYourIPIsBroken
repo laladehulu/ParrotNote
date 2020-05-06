@@ -1,0 +1,65 @@
+
+    <head>
+    <style>
+    .container{
+        display: grid;
+        grid-template-areas: 
+                    
+                   "b c c"
+                   "b c c"
+                   
+                    "b a a";
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 2fr 1fr;
+         
+       }
+       .main{
+         grid-area: c;
+       }
+       .questions{
+         min-height:100vh;
+         grid-area: b;
+       }
+       .summary{
+         grid-area: a;
+       }
+       div{
+       
+         border: 1px solid black;
+         display:inline-block;
+         width: 100%;
+       }
+       li{
+        display:inline;
+       }
+       .timeStamp{
+         font-size:11px;
+         color:grey;
+         
+       }
+    
+    </style>
+    </head>
+  
+
+    <h1>Video Note</h1>
+    <div class="container">
+        <div class="questions">
+        Questions:
+        <ul>
+        </ul>
+        </div>
+       
+        <div class="main">
+        Informations:
+            <ol>
+            </ol>
+        </div>
+      
+        <div class="summary">
+        summary
+       
+         </div>
+    </div>   
+
+
